@@ -3,6 +3,8 @@ Bash prompt optimizations
 
 This is what I use in my `.bash_profile` in my daily work environment. It's based on a unix environment which I connect to via puTTY, so compatibility across terminals will be spotty.
 
+A ton of this was built using guesswork and google and is published here with no warranty whatsoever.
+
 ## Highlights
 
 * The `.bash_colors` file sets aliases for the colors I use in my environment. The 0-255 color codes should match up with [this chart](https://jonasjacek.github.io/colors/). For non-puTTY environments, you should be able to uncomment `format_rgb()` and feed it a standard r,g,b format to get the desired color.
