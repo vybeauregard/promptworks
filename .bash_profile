@@ -56,7 +56,7 @@ show_ps1 () {
 }
 w() {
      local zip_code = 90210
-     curl http://wttr.in/{!zip_code}?0?Q
+     curl http://wttr.in/${zip_code}?0?Q
 }
 
 PS1=$(show_ps1)
