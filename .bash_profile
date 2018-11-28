@@ -55,7 +55,7 @@ show_ps1 () {
         printf "${user}@${host}${dir}\$ "
 }
 w() {
-     local zip_code = 90210
+     local zip_code = 90210;
      curl http://wttr.in/${zip_code}?0?Q
 }
 
