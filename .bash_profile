@@ -20,9 +20,6 @@ env_finder() {
         *beta* )
             path_color="COLOR_BLUE_BG"
                 opposite_color="COLOR_BLUE";;
-        *sandbox* )
-            path_color="COLOR_CYAN_BG"
-                opposite_color="COLOR_CYAN";;
         *dev* )
                 path_color="COLOR_GREEN_BG"
                 opposite_color="COLOR_GREEN";;
@@ -30,9 +27,6 @@ env_finder() {
                 path_color="COLOR_ORANGE_BG"
                 opposite_color="COLOR_ORANGE";;
         *prod* )
-                path_color="COLOR_RED_BG"
-                opposite_color="COLOR_RED";;
-        *public* )
                 path_color="COLOR_RED_BG"
                 opposite_color="COLOR_RED";;
         * )
@@ -61,7 +55,8 @@ show_ps1 () {
         printf "${user}@${host}${dir}\$ "
 }
 w() {
-     curl http://wttr.in/20032?0?Q
+     local zip_code = 90210
+     curl http://wttr.in/{!zip_code}?0?Q
 }
 
 PS1=$(show_ps1)
